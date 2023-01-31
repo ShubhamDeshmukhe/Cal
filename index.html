@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <div class="con">
+        <div class="auto">
+            <div class="display">
+                <input type="text" id="screen" name="run" value="" class="int">
+            </div>
+
+            <div class="row row1">
+                <button class="btn btn2" onclick="allclear()">AC</button>
+
+                <button class="btn btn2" onclick="show('%')">%</button>
+                <button class="btn" onclick="show('/')">&divide;</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" value="7" onclick="show('7')">7</button>
+                <button class="btn" value="8" onclick="show('8')">8</button>
+                <button class="btn" value="9" onclick="show('9')">9</button>
+                <button class="btn" value="*" onclick="show('*')">&times;</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" value="4" onclick="show('4')">4</button>
+                <button class="btn" value="5" onclick="show('5')">5</button>
+                <button class="btn" value="6" onclick="show('6')">6</button>
+                <button class="btn" value="-" onclick="show('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="btn" value="1" onclick="show('1')">1</button>
+                <button class="btn" value="2" onclick="show('2')">2</button>
+                <button class="btn" value="3" onclick="show('3')">3</button>
+                <button class="btn" value="+" onclick="show('+')">+</button>
+            </div>
+
+            <div class="row">
+                <button class="btn btn1" onclick="show('0')">0</button>
+                <button class="btn" onclick="show('.')">.</button>
+                <button class="btn" onclick="calculate()">=</button>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var screen = document.getElementById("screen");
+        function allclear() {
+            screen.value = "";
+        }
+        function show(n) {
+            screen.value += n;
+        }
+        function calculate() {
+            screen.value = eval(screen.value);
+        }
+        function pop() {
+            var demo = screen;
+            demo.pop();
+        }
+
+    </script>
+
+</body>
+
+</html>
