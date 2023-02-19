@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background: rgb(220, 228, 255); 
+    background-color: rgb(220, 228, 255); 
 }
 .con{
     padding: 15px 12px;
