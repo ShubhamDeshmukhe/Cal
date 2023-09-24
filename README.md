@@ -15,6 +15,6 @@ Keyboard Support: Use the keyboard for input and shortcuts.
 Open the app in your web browser by visiting the hosted URL https://shubhamdeshmukhe.github.io/Calculator/ or opening the index.html file locally.  
 Use the on-screen buttons to input numbers and perform calculations.  
 You can also use your keyboard for input. For example, use 1, 2, 3, etc., for numbers, +, -, *, / for basic operations, and = for result calculation.  
-Explore advanced functions and features as needed.  
+Explore advanced functions and features as needed.
 
 
